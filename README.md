@@ -26,7 +26,7 @@ Para el uso de la aplicación son necesarias unas **gafas RV** básicas, un **ma
 
 * En el script **GameController** almacenamos todos las varaibles estáticas que necesitaban los demás scripts (ej: el objeto jugador, el material usado para renderizar el objeto seleccionado...).
 
-También escucha algunos eventos comunes para varios objetos como pulsar el botón X, ya que de otro modo todos los objetos seleccionables (que son los que tienen el script Selectable) tendrían que escuchar por este en el Update, lo cual sería ineficiente.
+El GameController también escucha algunos eventos comunes para varios objetos como pulsar el botón X, ya que de otro modo todos los objetos seleccionables (que son los que tienen el script Selectable) tendrían que escuchar por este en el Update, lo cual sería ineficiente.
 
 Además también controla el temporizador del juego y las condiciones de victoria.
 
