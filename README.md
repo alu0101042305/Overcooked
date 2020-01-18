@@ -10,4 +10,4 @@ es conseguir el mayor número de puntos en el tiempo de servicio.
 
 # Uso
 ## Controles
-![](img/controller.jpg)
+![](img/controller.jpg | width=100)
