@@ -5,7 +5,7 @@
 # Juego
 Nos hemos propuesto implementar una versión simplifiada del juego [Overcooked](https://store.steampowered.com/app/448510/Overcooked/?l=spanish).
 
-El juego Overcooked es una simulación de cocina con vista isométrica en el que el usuario va recibiendo pedidos de comida que debe ir completando usando ingredientes y herramientas en un tiepo limitado. Hemos mantenido el mismo concepto solo que la cámara en nuestra aplicación estará en la cara del personaje para que esta sea apta para realidad virtual.
+El juego Overcooked es una simulación de cocina con vista isométrica en el que el usuario va recibiendo pedidos de comida que debe ir completando usando ingredientes y herramientas en un tiepo limitado. Hemos mantenido el mismo concepto solo que la cámara en nuestra aplicación estará en la cara del personaje para que esta sea coherente en realidad virtual.
 
 # Uso
 Para el uso de la aplicación son necesarias unas **gafas RV** básicas, un **mando de PlayStation 4** que deberá ir conectado al móvil por bluetooth y evidentemente la apk de la aplicación en el smartphone en el que se vaya a usar.
