@@ -24,11 +24,11 @@ Para el uso de la aplicación son necesarias unas **gafas RV** básicas, un **ma
 
 * Además tambiéns hemo implementado dos scripts que heredan de Selectable para definir el comportamiento los objetos que se pueden agarrar (**Catchable**) y los que pueden contener otros objetos (**Container**). Una de las mayores dificultades de esta implementación fueron los **platos** porque estos se deben comportar tanto como un objeto que se pueda agarrar como un contenedor.
 
-* En el script **GameController** almacenamos todos las varaibles estáticas que necesitaban los demás scripts (ej: el objeto jugador, el material usado para renderizar el objeto seleccionado...).
+* En el script **GameController** almacenamos todos las objetos estáticoss del juego que necesitan los demás scripts (ej: el objeto jugador, el material usado para renderizar el objeto seleccionado...).
 
-El GameController también escucha algunos eventos comunes para varios objetos como pulsar el botón X, ya que de otro modo todos los objetos seleccionables (que son los que tienen el script Selectable) tendrían que escuchar por este en el Update, lo cual sería ineficiente.
+El GameController también escucha algunos **eventos comunes** para varios objetos como pulsar el botón X, ya que de otro modo todos los objetos seleccionables (que son los que tienen el script Selectable) tendrían que escuchar por este en el Update, lo cual sería ineficiente.
 
-Además también controla el temporizador del juego y las condiciones de victoria.
+Además también controla el **temporizador del juego** y las **condiciones de victoria**.
 
 # Aspectos destacables
 * **El usuario puede desplazar el giro de la cámara usando el giroscopio del móvil junto a las gafas RV o mediante los joystick del mando**. Lo hemos decidido así porque la acción principal del juego no siempre ocurre en el mismo lugar y es incómodo mantener giros amplios durante demasiado tiempo.
