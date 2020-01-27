@@ -53,12 +53,13 @@ Nuestra metodología de trabajo se basó en ir definiendo diferentes tareas a me
 |Platos (funcionamiento)|Lucas|
 |Cocina|Daniel|
 |Animaciones|Daniel|
-|Sonidos|Lucas|
+|Sonidos|Todos|
 |Voz|Daniel|
 |Skybox|Daniel|
 |Barras de tiempo para horno sarten etc...|Lucas|
 |Recetas|Juan|
 |Poner timer en un reloj del world space|Juan|
 |Bocadillos en los clientes|Lucas|
+|Tabla de cortar|Dani|
 
 
