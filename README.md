@@ -17,8 +17,19 @@ Para el uso de la aplicación son necesarias unas **gafas RV** básicas, un **ma
 * El **botón ▢** nos permite cortar en la tabla.
 
 ## Cómo jugar
+A medida que avance el tiempo irán llegando clientes a la cocina. El objetivo es completar al menos cinco pedidos.
+Para ello deberemos hacer las comidas que nos piden los clientes y colocar los resultados en las encimeras que tienen en frente junto a un plato.
 
-**(Aquí GIF de ejecución + como jugar redactado)**
+Las posibles recetas son:
+
+* Carne: freír carne cruda en la sartén.
+* Huevo frito: freír un huevo en la sartén.
+* Tarta de manzana: cortar la manzana (en la tabla de cortar) e introducirla al horno, después otro huevo.
+
+Cada vez que usamos un utensilio de cocina hay que esperar 10 segundos para que se cocine.
+
+![](img/animatedGif.gif)
+
 # Hitos de programación
 
 * Hemos implementado un script **Selectable** que escucha los eventos de puntero (que equivalen a la dirección de la mirada en RV) usando las clases de Unity IPointerEnterHandler y IPointerExitHandler para que el usuario pueda seleccionar los objetos que incluyan a dicho script como componente.
