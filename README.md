@@ -60,6 +60,6 @@ Nuestra metodología de trabajo se basó en ir definiendo diferentes tareas a me
 |Recetas|Juan|
 |Poner timer en un reloj del world space|Juan|
 |Bocadillos en los clientes|Lucas|
-|Tabla de cortar|Dani|
+|Tabla de cortar|Daniel|
 
 
