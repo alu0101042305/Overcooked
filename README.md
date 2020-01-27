@@ -14,6 +14,7 @@ Para el uso de la aplicación son necesarias unas **gafas RV** básicas, un **ma
 
 * El **joystick izquierdo** nos permitirá despazar al personaje hacia delante y hacia atrás y también girar la cámara.
 * El **botón X** nos permite agarrar y soltar objetos.
+* El **botón ▢** nos permite cortar en la tabla.
 
 ## Cómo jugar
 
@@ -40,4 +41,24 @@ Además también controla el **temporizador del juego** y las **condiciones de v
 * También estamos usando el **micrófono** para escuchar por la palabra "help". Al hacerlo se mostrará unas instrucciones de la aplicación.
 
 # Trabajo en equipo
-**(Aquí la lista de tareas etc...)**
+Nuestra metodología de trabajo se basó en ir definiendo diferentes tareas a medida que avanzábamos en el proyecto e irlas auto-asignándolas. También realizamos varias reuniones por llamadas online para discutir sobre el estado actual del proyecto. Estas son alguna de las tareas (no todas) que definimos inicialmente para que todos pudieramos trabajar de manera **modular**.
+
+|TAREAS|ASIGNADO|
+|---|---|
+|Coger objetos|Lucas|
+|Temporizador partida|Juan|
+|Clientes|Juan|
+|Movimiento de personaje|Lucas|
+|Platos (modelo)|Juan|
+|Platos (funcionamiento)|Lucas|
+|Cocina|Daniel|
+|Animaciones|Daniel|
+|Sonidos|Lucas|
+|Voz|Daniel|
+|Skybox|Daniel|
+|Barras de tiempo para horno sarten etc...|Lucas|
+|Recetas|Juan|
+|Poner timer en un reloj del world space|Juan|
+|Bocadillos en los clientes|Lucas|
+
+
