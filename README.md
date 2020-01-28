@@ -34,7 +34,7 @@ Cada vez que usamos un utensilio de cocina hay que esperar 10 segundos para que 
 
 * Hemos implementado un script **Selectable** que escucha los eventos de puntero (que equivalen a la dirección de la mirada en RV) usando las clases de Unity IPointerEnterHandler y IPointerExitHandler para que el usuario pueda seleccionar los objetos que incluyan a dicho script como componente.
 
-* Además tambiéns hemo implementado dos scripts que heredan de Selectable para definir el comportamiento los objetos que se pueden agarrar (**Catchable**) y los que pueden contener otros objetos (**Container**). Una de las mayores dificultades de esta implementación fueron los **platos** porque estos se deben comportar tanto como un objeto que se pueda agarrar como un contenedor.
+* Además tambiéns hemo implementado dos scripts que heredan de Selectable para definir el comportamiento los objetos que se pueden agarrar (**Catchable**) y los que pueden contener otros objetos (**Container**). Una de las mayores dificultades de esta implementación fueron los **platos** porque estos se deben comportar tanto como un objeto que se pueda agarrar y como un contenedor.
 
 * En el script **GameController** almacenamos todos las objetos estáticoss del juego que necesitan los demás scripts (ej: el objeto jugador, el material usado para renderizar el objeto seleccionado...).
 
