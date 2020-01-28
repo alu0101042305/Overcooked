@@ -14,7 +14,7 @@ Para el uso de la aplicación son necesarias unas **gafas RV** básicas, un **ma
 
 * El **joystick izquierdo** nos permitirá despazar al personaje hacia delante y hacia atrás y también girar la cámara.
 * El **botón X** nos permite agarrar y soltar objetos.
-* El **botón ▢** nos permite cortar en la tabla.
+* El **botón ○** nos permite cortar en la tabla.
 
 ## Cómo jugar
 A medida que avance el tiempo irán llegando clientes a la cocina. El objetivo es completar al menos cinco pedidos.
