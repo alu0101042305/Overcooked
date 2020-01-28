@@ -57,10 +57,10 @@ Nuestra metodología de trabajo se basó en ir definiendo diferentes tareas a me
 |TAREAS|ASIGNADO|
 |---|---|
 |Coger objetos|Lucas|
-|Temporizador partida|Juanjo|
-|Clientes|Juanjo|
+|Temporizador partida|Juan|
+|Clientes|Juan|
 |Movimiento de personaje|Lucas|
-|Platos (modelo)|Juanjo|
+|Platos (modelo)|Juan|
 |Platos (funcionamiento)|Lucas|
 |Cocina|Daniel|
 |Animaciones|Daniel|
@@ -68,8 +68,8 @@ Nuestra metodología de trabajo se basó en ir definiendo diferentes tareas a me
 |Voz|Daniel|
 |Skybox|Daniel|
 |Barras de tiempo para horno sarten etc...|Lucas|
-|Escena menu|Juanjo|
-|UI world space|Juanjo|
+|Escena menu|Juan|
+|UI world space|Juan|
 |Bocadillos en los clientes|Lucas|
 |Tabla de cortar|Daniel|
 
