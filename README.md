@@ -36,7 +36,7 @@ Cada vez que usamos un utensilio de cocina hay que esperar 10 segundos para que 
 
 * Además tambiéns hemo implementado dos scripts que heredan de Selectable para definir el comportamiento los objetos que se pueden agarrar (**Catchable**) y los que pueden contener otros objetos (**Container**). Una de las mayores dificultades de esta implementación fueron los **platos** porque estos se deben comportar tanto como un objeto que se pueda agarrar y como un contenedor.
 
-* En el script **GameController** almacenamos todos las objetos estáticoss del juego que necesitan los demás scripts (ej: el objeto jugador, el material usado para renderizar el objeto seleccionado...).
+* En el script **GameController** almacenamos todos las objetos estáticos del juego que necesitan los demás scripts (ej: el objeto jugador, el material usado para renderizar el objeto seleccionado...).
 
 El GameController también escucha algunos **eventos comunes** para varios objetos como pulsar el botón X, ya que de otro modo todos los objetos seleccionables (que son los que tienen el script Selectable) tendrían que escuchar por este en el Update, lo cual sería ineficiente.
 
@@ -47,7 +47,7 @@ Además también controla el **temporizador del juego** y las **condiciones de v
 
 * El usuario interactúa con los diferentes elementos de la escena seleccionándolos con la mirada. **El objeto que está seleccionado actualmente es renderizado con una textura resaltante** (amarilla) para que el usuario tenga claro que objeto está seleccionando en cada momento.
 
-* Hemos implementado algunos sonidos sencillos para indicar al usuario cuando hace algo mal o bien. Por ejemplo: si una encimera ya está ocupada y el usuario intenta colocar algo en ella, se reproducirá **sonido de error**.
+* Hemos implementado algunos sonidos sencillos para indicar al usuario cuando hace algo mal o bien. Por ejemplo: si una encimera ya está ocupada y el usuario intenta colocar algo en ella, se reproducirá un **sonido de error**.
 
 * También estamos usando el **micrófono** para escuchar por la palabra "help". Al hacerlo se mostrará unas instrucciones de la aplicación.
 
