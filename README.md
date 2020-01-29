@@ -36,6 +36,8 @@ Cada vez que usamos un utensilio de cocina hay que esperar 10 segundos para que 
 
 * Además tambiéns hemo implementado dos scripts que heredan de Selectable para definir el comportamiento los objetos que se pueden agarrar (**Catchable**) y los que pueden contener otros objetos (**Container**). Una de las mayores dificultades de esta implementación fueron los **platos** porque estos se deben comportar tanto como un objeto que se pueda agarrar y como un contenedor.
 
+* Implementamos algunas animaciones sencillas en el movimiento de los clientes y de la tabla de cortar.
+
 * En el script **GameController** almacenamos todos las objetos estáticos del juego que necesitan los demás scripts (ej: el objeto jugador, el material usado para renderizar el objeto seleccionado...).
 
 El GameController también escucha algunos **eventos comunes** para varios objetos como pulsar el botón X, ya que de otro modo todos los objetos seleccionables (que son los que tienen el script Selectable) tendrían que escuchar por este en el Update, lo cual sería ineficiente.
@@ -49,12 +51,10 @@ Además también controla el **temporizador del juego** y las **condiciones de v
 
 * Hemos implementado algunos sonidos sencillos para indicar al usuario cuando hace algo mal o bien. Por ejemplo: si una encimera ya está ocupada y el usuario intenta colocar algo en ella, se reproducirá un **sonido de error**.
 
-* También estamos usando el **micrófono** para escuchar por la palabra "help". Al hacerlo se mostrará unas instrucciones de la aplicación.
-
 # Trabajo en equipo
 Nuestra metodología de trabajo se basó en ir definiendo diferentes tareas a medida que avanzábamos en el proyecto e irlas auto-asignándolas. También realizamos varias reuniones por llamadas online para discutir sobre el estado actual del proyecto. Estas son alguna de las tareas (no todas) que definimos inicialmente para que todos pudieramos trabajar de manera **modular**.
 
-|TAREAS|ASIGNADO|
+|TAREA|ASIGNADO|
 |---|---|
 |Coger objetos|Lucas|
 |Temporizador partida|Juanjo|
