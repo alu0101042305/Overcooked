@@ -33,11 +33,13 @@ public class Catchable : Selectable
         }
     }
 
+    // Obtiene el contenedor
     public Container GetContainer()
     {
         return container;
     }
 
+    // Establece un contenedor
     public void SetContainer(Container cont)
     {
         container = cont;

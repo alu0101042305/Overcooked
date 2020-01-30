@@ -8,9 +8,9 @@ using static GameController;
 public class Sartén : Container
 {
 
-    TimerBar bar;
+    TimerBar bar;           //Barra de accion
 
-    ParticleSystem ps;
+    ParticleSystem ps;      // Particulas
 
     void Start()
     {
@@ -34,13 +34,13 @@ public class Sartén : Container
         if(item.CompareTag("Egg"))
         {
             newItem = Instantiate(controller.friedEgg);
-            
-        } 
+
+        }
         else
         {
             newItem = Instantiate(controller.meat);
         }
-        
+
         SetItem(newItem);
         newItem.transform.localPosition = item.transform.localPosition;
         Destroy(item);

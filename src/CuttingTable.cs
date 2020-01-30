@@ -3,16 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static GameController;
+
+
+// Clase de la tabla de cortar, que permite cortar la manzana
 public class CuttingTable : Container
 {
 
-    TimerBar bar;
+    TimerBar bar;                                           // Barra de accion
 
-    private Animator anim;
-    private GameObject player;
+    private Animator anim;                                  // Animacion
+    private GameObject player;                              // Objeto jugador
 
-    private const string animBoolName = "prepare";
-    private const string animBoolName2 = "cut";
+    private const string animBoolName = "prepare";          // String para llamar a la animacion prepare
+    private const string animBoolName2 = "cut";             // String para llamar a la animacion cut
 
     void Start()
     {
@@ -24,7 +27,7 @@ public class CuttingTable : Container
         anim.enabled = false;
     }
 
-
+    // Cuando termina de cortar y obtiene la manzana cortada
     void OnEnd()
     {
         GameObject item = GetItem();
@@ -43,9 +46,9 @@ public class CuttingTable : Container
         base.OnAction();
 
     }
-    
-    
 
+
+    // Interactuando
     void OnTriggerStay(Collider other)
     {
         if (!Empty())
@@ -86,14 +89,16 @@ public class CuttingTable : Container
             }
         }
     }
+
+    //Terminar de cortar
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == player){			
+        if (other.gameObject == player){
             anim.SetBool(animBoolName, false);
             anim.SetBool(animBoolName2, false);
             if (bar.IsPlaying())
                 bar.Stop();
         }
     }
-    
+
 }

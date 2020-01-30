@@ -10,10 +10,10 @@ public class Client : MonoBehaviour
     Image img; // referencia a la imagen del bocadillo
     Recipe food; // comida asignada actualmente al cliente
     Recipe[] foods = null; // referencia al array con las recetas
-    private Animator anim;
+    private Animator anim;  // Animacion del cliente
 
     [SerializeField]
-    Container cont;
+    Container cont; //Contenedor
 
     private void Awake()
     {
@@ -23,11 +23,13 @@ public class Client : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    //Cuando esta disponible
     private void OnEnable()
     {
         SetRecipe(foods[Random.Range(0, foods.Length)]);
     }
 
+    // Objeto encima
     void OnItemOn(GameObject obj)
     {
         if(obj.CompareTag("Plate"))
@@ -64,11 +66,13 @@ public class Client : MonoBehaviour
         img.sprite = food.img;
     }
 
+    //pbjeto no dispònible
     public void Off()
     {
         gameObject.SetActive(false);
     }
-    //When a order is completed
+
+    //Funcion que establece el pedido completado
     void OrderCompleted(int points) {
         controller.AddPoints(points);
         anim.SetBool("finish", true);

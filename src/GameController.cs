@@ -7,30 +7,30 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    public static GameController controller;
-    public Container player { get; private set; }
-    public AudioSource failSound { get; private set; }
-    public AudioSource doneSound { get; private set; }
-    public AudioSource frieSound { get; private set; }
+    public static GameController controller;                         // Instancia del controlador
+    public Container player { get; private set; }                    // Getter setter del container del jugador
+    public AudioSource failSound { get; private set; }               // Audio fallo
+    public AudioSource doneSound { get; private set; }               // Audio Hecho
+    public AudioSource frieSound { get; private set; }               // Audio friendo
 
-    public Text timerText;                              // Text of countdown timer
-    public Text pointText;                              // Text points of player
+    public Text timerText;                                           // Text of countdown timer
+    public Text pointText;                                           // Text points of player
 
-    public Material selectableMaterial;
-    public GameObject meat;
-    public GameObject friedEgg;
-    public GameObject pie;
-    public GameObject cutApple;
+    public Material selectableMaterial;                              // Material de seleccion
+    public GameObject meat;                                          // Carne cocinado
+    public GameObject friedEgg;                                      // Huevo frito
+    public GameObject pie;                                           // Pastel
+    public GameObject cutApple;                                      // Manzana cortada
 
-    int countDownTime;                                  // Seconds to finish the game
+    int countDownTime;                                               // Seconds to finish the game
 
-    public int points;                                         // player points
+    public int points;                                               // player points
 
-    GameObject client1;                                 // Client 1
-    GameObject client2;                                 // Client 2
-    GameObject client3;                                 // Client 3
-    GameObject client4;                                 // Client 4
-    private Queue<GameObject> cola = new Queue<GameObject>();
+    GameObject client1;                                              // Client 1
+    GameObject client2;                                              // Client 2
+    GameObject client3;                                              // Client 3
+    GameObject client4;                                              // Client 4
+    private Queue<GameObject> cola = new Queue<GameObject>();        // Cola de clientes
 
     private void Awake()
     {
@@ -70,7 +70,7 @@ public class GameController : MonoBehaviour
         }
     }
 
-    // Calculate time to finish the game
+    // Calcula el tiempo que falta para terminar la partida
     void CDTimer() {
         if (countDownTime > 0) {
         TimeSpan timeSpan = TimeSpan.FromSeconds(countDownTime);
@@ -103,7 +103,7 @@ public class GameController : MonoBehaviour
       SceneManager.LoadScene(scene);
     }
 
-    //Client activate at begin
+    //Activacion de los clientes al principio
     void ClientBegin()
     {
       client2.SetActive(false);
@@ -115,7 +115,7 @@ public class GameController : MonoBehaviour
         cola.Enqueue(client1);
     }
 
-    // Control of activating clients
+    // Control de la activacion de clientes
     void ClientsActivate() {
       if (countDownTime >0 || points < 5) {
             for(int i = 0; i < cola.Count; i++)
@@ -135,7 +135,7 @@ public class GameController : MonoBehaviour
       }
     }
 
-    // Invoke randomly Clients function
+    // Invocar aleatoriamente clientes
     void RandomlyClients()
     {
        float randomTime = UnityEngine.Random.Range(8.0f, 15.0f);
@@ -143,6 +143,7 @@ public class GameController : MonoBehaviour
        Invoke("RandomlyClients", randomTime);
     }
 
+    // Anyade puntuacion
     public void AddPoints(int p)
     {
       points += p;
@@ -153,6 +154,7 @@ public class GameController : MonoBehaviour
       }
     }
 
+    // Jugador gana
     public bool PlayerWinned()
     {
         return points >= 5;

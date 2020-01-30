@@ -9,13 +9,13 @@ using static GameController;
 public class Horno : Container
 {
 
-    TimerBar bar;
-    bool ended = false;
-    bool hasEgg = false;
-    bool hasApple = false;
-    private Light ovenLight;
+    TimerBar bar;                 // Barra de accdion
+    bool ended = false;           // booleano de proceso terminador
+    bool hasEgg = false;          // booleano de si el horno tiene un huevo
+    bool hasApple = false;        // booleano de si el horno tiene una manzana cortada
+    private Light ovenLight;      // Luz
 
-    
+
     void Start()
     {
         base.Start();
@@ -45,6 +45,7 @@ public class Horno : Container
         }
     }
 
+    // Accion del horno
     public override void OnAction()
     {
         GameObject obj = controller.player.GetItem();
@@ -83,5 +84,5 @@ public class Horno : Container
         }
 
     }
-    
+
 }
