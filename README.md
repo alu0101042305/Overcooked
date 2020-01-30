@@ -12,13 +12,13 @@ Para el uso de la aplicación son necesarias unas **gafas RV** básicas, un **ma
 ## Controles
 <img src="img/controller.jpg" width="300">
 
-* El **joystick izquierdo** nos permitirá despazar al personaje hacia delante y hacia atrás y también girar la cámara.
+* El **joystick izquierdo** nos permitirá desplazar al personaje hacia delante y hacia atrás y también girar la cámara.
 * El **botón ✖** nos permite agarrar y soltar objetos.
 * El **botón ◯** nos permite cortar en la tabla.
 
 ## Cómo jugar
 A medida que avance el tiempo irán llegando clientes a la cocina. El objetivo es completar al menos cinco pedidos.
-Para ello deberemos hacer las comidas que nos piden los clientes y colocar los resultados en las encimeras que tienen en frente junto a un plato.
+Para ello deberemos hacer las comidas que nos piden los clientes y colocar los resultados en las encimeras que tienen enfrente junto a un plato.
 
 Las posibles recetas son:
 
@@ -34,7 +34,7 @@ Cada vez que usamos un utensilio de cocina hay que esperar 10 segundos para que 
 
 * Hemos implementado un script **Selectable** que escucha los eventos de puntero (que equivalen a la dirección de la mirada en RV) usando las clases de Unity IPointerEnterHandler y IPointerExitHandler para que el usuario pueda seleccionar los objetos que incluyan a dicho script como componente.
 
-* Además tambiéns hemo implementado dos scripts que heredan de Selectable para definir el comportamiento los objetos que se pueden agarrar (**Catchable**) y los que pueden contener otros objetos (**Container**). Una de las mayores dificultades de esta implementación fueron los **platos** porque estos se deben comportar tanto como un objeto que se pueda agarrar y como un contenedor.
+* Además también hemo implementado dos scripts que heredan de Selectable para definir el comportamiento los objetos que se pueden agarrar (**Catchable**) y los que pueden contener otros objetos (**Container**). Una de las mayores dificultades de esta implementación fueron los **platos** porque estos se deben comportar tanto como un objeto que se pueda agarrar y como un contenedor.
 
 * Implementamos algunas animaciones sencillas en el movimiento de los clientes y de la tabla de cortar.
 
@@ -67,8 +67,8 @@ Nuestra metodología de trabajo se basó en ir definiendo diferentes tareas a me
 |Sonidos|Todos|
 |Voz|Daniel|
 |Skybox|Daniel|
-|Barras de tiempo para horno sarten etc...|Lucas|
-|Escena menu|Juanjo|
+|Barras de tiempo para horno sartén etc...|Lucas|
+|Escena menú|Juanjo|
 |UI world space|Juanjo|
 |Bocadillos en los clientes|Lucas|
 |Tabla de cortar|Daniel|
